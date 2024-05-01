@@ -1,0 +1,48 @@
+:root {
+    --color: #4973ff;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(240, 249, 255);
+}
+
+/* Contact With Links */
+.contactWithLinks ul li {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.contactWithLinks ul li a {
+    border: 2px solid #111;
+    padding: 7px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.contactWithLinks ul li a:hover {
+    border: 2px solid #0663f8;
+    color: #0663f8;
+}
+.contactWithLinks ul li a i {
+    font-size: 25px;
+}

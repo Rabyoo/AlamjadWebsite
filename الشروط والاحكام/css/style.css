@@ -1,0 +1,113 @@
+:root {
+    --color: #4973ff;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4973ff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #355cdd;
+}
+
+/* Header */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color);
+}
+
+/* Hero Section */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7f9;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 300px;
+}
+
+/* termsAndConditions */
+.termsAndConditions {
+    position: relative;
+    text-align: right;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    top: 200px;
+    box-shadow: 2px 2px 10px -5px #111;
+}
+.termsAndConditions .title {
+    position: relative;
+    margin: 50px 0;
+    text-align: right;
+}
+.termsAndConditions .title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 10px;
+}
+.termsAndConditions .title p {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.4;
+}
+.termsAndConditions .textList li {
+    margin: 30px 0;
+    text-align: end;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.4;
+}
+
+
+@media screen and (max-width: 768px) {
+       header .mobileHead {
+        position: absolute;
+        right: 30px;
+        top: 80px;
+    }
+    header .mobileHead a {
+        margin-right: 30px;
+        border: 2px solid #4973ff;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+}
+
+/* Header  */
+
+
+

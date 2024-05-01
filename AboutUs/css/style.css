@@ -1,0 +1,110 @@
+:root {
+    --color: #4973ff;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4973ff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #355cdd;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(240, 249, 255);
+}
+
+/* Header */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color);
+}
+
+.aboutusContent {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+.followUs .links li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    right: -470px;
+    margin-top: 15px;
+}
+.followUs .links li a {
+    font-size: 25px;
+    transition: 0.2s;
+}
+.followUs .links li a:hover {
+    color: var(--color);
+}
+
+/* Components */
+.components {
+    position: relative;
+    top: 1400px;
+}
+
+footer {
+    position: relative;
+    top: 1500px;
+}
+
+/* Mwdia Query */
+@media screen and (max-width: 768px) {
+       header .mobileHead {
+        position: absolute;
+        right: 30px;
+        top: 80px;
+    }
+    header .mobileHead a {
+        margin-right: 30px;
+        border: 2px solid #4973ff;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .followUs {
+        position: absolute;
+        width: 100%;
+        left: -30%;
+        top: 85%;
+    }
+    .followUs .links li {
+    right: -310px;
+}
+    .followUs .links li a {
+        font-size: 35px;
+    }
+    .followUs h3 {
+        text-align: center;
+    position: relative;
+    left: 30%;
+    font-size: 40px;
+    }
+    
+}

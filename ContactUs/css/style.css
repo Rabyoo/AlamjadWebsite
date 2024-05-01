@@ -1,0 +1,104 @@
+:root {
+    --color: #4973ff;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #4973ff;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #355cdd;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(240, 249, 255);
+}
+
+/* Header */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color);
+}
+
+/* Contact Use */
+.contactUs {
+    position: relative;
+    top: 350px;
+}
+
+/* Hero Section */
+.heroSec {
+    position: relative;
+    top: 180px;
+}
+
+.questionsTitle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 117%;
+}
+.questionsTitle h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #111;
+}
+.questionsTitle span {
+    text-align: center;
+    position: relative;
+    left: -100px;
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+}
+.questionsTitle .underLine {
+    width: 100px;
+    height: 2px;
+    background-color: #111;
+    text-align: center;
+    position: relative;
+    left: 130px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 300px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+       header .mobileHead {
+        position: absolute;
+        right: 30px;
+        top: 80px;
+    }
+    header .mobileHead a {
+        margin-right: 30px;
+        border: 2px solid #4973ff;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+}
